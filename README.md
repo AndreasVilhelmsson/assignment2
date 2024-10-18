@@ -8,13 +8,20 @@ SQLite3:
 
 Om du inte redan har SQLite installerat, ladda ner och installera det från SQLite. Kontrollera installationen genom att köra följande kommando i terminalen
 
+```
 sqlite3 --version
+```
+
+```
 /library-system
   ├── commands.sql   # SQL-skriptet för att skapa och populera databasen
   └── library.db     # (Skapas automatiskt) SQLite-databasfilen
+```
 commands.sql: Innehåller SQL-koden för att skapa databasen, tabeller, infoga data och skapa vyer.
 
 library.db: Skapas automatiskt när du kör projektet och fungerar som din databasfil.
 
+```
 sqlite3 library.db
+```
 Där commands.sql innehåller hela skriptet för att skapa och populera databasen (se nästa del).
