@@ -35,3 +35,31 @@ Där commands.sql innehåller hela skriptet för att skapa och populera database
 Här är er diagramet för databas strukturen
 
 ![ER Diagram](./images/er_diagram.jpg)
+
+UML diagram över databasen
+
+```
++----------------------------------+        +------------------------------------+
+|             Book                 |        |           Borrower                |
++----------------------------------+        +------------------------------------+
+| - book_id: Integer               |        | - borrower_id: Integer             |
+| - title: String                  |        | - name: String                     |
+| - author: String                 |        | - phone: String                    |
+| - publication_year: Integer      |        | - email: String                    |
+| - isbn: String                   |        +------------------------------------+
++----------------------------------+                          |
+                                                               |
+                                                               |
+                                                               |
+                                                               |
++------------------------------------+                         |
+|              Loan                  |<------------------------+
++------------------------------------+
+| - loan_id: Integer                 |
+| - book_id: Integer (FK)            |
+| - borrower_id: Integer (FK)        |
+| - loan_date: DateTime              |
+| - due_date: Date                   |
+| - return_date: Date                |
++------------------------------------+
+```
