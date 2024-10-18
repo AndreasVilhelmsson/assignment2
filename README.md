@@ -32,6 +32,6 @@ Där commands.sql innehåller hela skriptet för att skapa och populera database
 
 ## ER Diagram
 
-Here is the Entity-Relationship Diagram for the database structure:
+Här är er diagramet för databas strukturen
 
 ![ER Diagram](./images/er_diagram.jpg)
